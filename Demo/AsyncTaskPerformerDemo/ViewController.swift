@@ -15,17 +15,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let objectIDs = [1, 2, 3]
+        let objectIDs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
         let operations = objectIDs.map { GetObjectByIDOperation(id: $0, api: api) }
         let nullObject = FakeObject(id: -1, name: "NULL")
         let asyncOperationQueue = AsyncOperationQueue(defaultValue: nullObject)
         
-        asyncOperationQueue.executeOperations(operations) { [weak self] (finalObject, error) in
+        asyncOperationQueue.executeOperations(operations) {(finalObject, error) in
             if let error = error {
                 print("ERROR: \(error.localizedDescription)")
             } else {
-                print(finalObject!.id)
-                print(finalObject!.name)
+                print("FINAL OBJECT: " + finalObject!.name)
             }
         }
     }
