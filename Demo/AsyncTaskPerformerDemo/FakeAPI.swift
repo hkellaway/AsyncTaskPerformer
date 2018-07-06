@@ -27,6 +27,7 @@ final class FakeAPI {
         FakeObject(id: 2, name: "B"),
         FakeObject(id: 3, name: "C")
     ]
+    private var finalObject = FakeObject(id: 0, name: "")
     
     func getObjectByID(_ id: Int, completion: @escaping (FakeObject?, Error?) -> Void) {
         var error: Error? = nil
@@ -42,7 +43,9 @@ final class FakeAPI {
             }
             
             let object = self!.fakeObjects[id - 1]
-            completion(object, nil)
+            self?.finalObject = FakeObject(id: self!.finalObject.id + id,
+                                           name: self!.finalObject.name + object.name)
+            completion(self!.finalObject, nil)
         }
     }
     

@@ -14,6 +14,11 @@
 		DC0EDE2D20EFA82C00059DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0EDE2B20EFA82C00059DEE /* LaunchScreen.storyboard */; };
 		DC0EDE3620EFA8C900059DEE /* FakeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3520EFA8C900059DEE /* FakeAPI.swift */; };
 		DC0EDE3820EFA99000059DEE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3720EFA99000059DEE /* Timer.swift */; };
+		DC0EDE3A20EFABB700059DEE /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */; };
+		DC61413720EFAC8D00026539 /* AyncOperationWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */; };
+		DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */; };
+		DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */; };
+		DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		DC0EDE2E20EFA82C00059DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC0EDE3520EFA8C900059DEE /* FakeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAPI.swift; sourceTree = "<group>"; };
 		DC0EDE3720EFA99000059DEE /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyncOperationWithCompletion.swift; sourceTree = "<group>"; };
+		DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
+		DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
+		DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObjectByIDOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 				DC0EDE3420EFA8AD00059DEE /* Library */,
 				DC0EDE2220EFA82C00059DEE /* AppDelegate.swift */,
 				DC0EDE2420EFA82C00059DEE /* ViewController.swift */,
+				DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */,
 				DC0EDE2620EFA82C00059DEE /* Main.storyboard */,
 				DC0EDE2920EFA82C00059DEE /* Assets.xcassets */,
 				DC0EDE2B20EFA82C00059DEE /* LaunchScreen.storyboard */,
@@ -74,6 +85,10 @@
 		DC0EDE3420EFA8AD00059DEE /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */,
+				DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */,
+				DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */,
+				DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -153,6 +168,11 @@
 				DC0EDE2520EFA82C00059DEE /* ViewController.swift in Sources */,
 				DC0EDE2320EFA82C00059DEE /* AppDelegate.swift in Sources */,
 				DC0EDE3620EFA8C900059DEE /* FakeAPI.swift in Sources */,
+				DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */,
+				DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */,
+				DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */,
+				DC0EDE3A20EFABB700059DEE /* AsyncOperation.swift in Sources */,
+				DC61413720EFAC8D00026539 /* AyncOperationWithCompletion.swift in Sources */,
 				DC0EDE3820EFA99000059DEE /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
