@@ -19,6 +19,9 @@
 		DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */; };
 		DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */; };
 		DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */; };
+		DC91A73D20F0547B00D295AD /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A73C20F0547B00D295AD /* AsyncTask.swift */; };
+		DC91A73F20F054A600D295AD /* AsyncTaskSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */; };
+		DC91A74120F054DB00D295AD /* GetObjectByIDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A74020F054DA00D295AD /* GetObjectByIDTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
 		DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
 		DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObjectByIDOperation.swift; sourceTree = "<group>"; };
+		DC91A73C20F0547B00D295AD /* AsyncTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
+		DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTaskSynchronizer.swift; sourceTree = "<group>"; };
+		DC91A74020F054DA00D295AD /* GetObjectByIDTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObjectByIDTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				DC0EDE2220EFA82C00059DEE /* AppDelegate.swift */,
 				DC0EDE2420EFA82C00059DEE /* ViewController.swift */,
 				DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */,
+				DC91A74020F054DA00D295AD /* GetObjectByIDTask.swift */,
 				DC0EDE2620EFA82C00059DEE /* Main.storyboard */,
 				DC0EDE2920EFA82C00059DEE /* Assets.xcassets */,
 				DC0EDE2B20EFA82C00059DEE /* LaunchScreen.storyboard */,
@@ -85,12 +92,30 @@
 		DC0EDE3420EFA8AD00059DEE /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DC91A73B20EFB43200D295AD /* AsyncDispatchGroup */,
+				DC91A73A20EFB42100D295AD /* AsyncOperationQueue */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		DC91A73A20EFB42100D295AD /* AsyncOperationQueue */ = {
+			isa = PBXGroup;
+			children = (
 				DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */,
 				DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */,
 				DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */,
 				DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */,
 			);
-			name = Library;
+			name = AsyncOperationQueue;
+			sourceTree = "<group>";
+		};
+		DC91A73B20EFB43200D295AD /* AsyncDispatchGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DC91A73C20F0547B00D295AD /* AsyncTask.swift */,
+				DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */,
+			);
+			name = AsyncDispatchGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +194,12 @@
 				DC0EDE2320EFA82C00059DEE /* AppDelegate.swift in Sources */,
 				DC0EDE3620EFA8C900059DEE /* FakeAPI.swift in Sources */,
 				DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */,
+				DC91A74120F054DB00D295AD /* GetObjectByIDTask.swift in Sources */,
 				DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */,
+				DC91A73F20F054A600D295AD /* AsyncTaskSynchronizer.swift in Sources */,
 				DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */,
 				DC0EDE3A20EFABB700059DEE /* AsyncOperation.swift in Sources */,
+				DC91A73D20F0547B00D295AD /* AsyncTask.swift in Sources */,
 				DC61413720EFAC8D00026539 /* AyncOperationWithCompletion.swift in Sources */,
 				DC0EDE3820EFA99000059DEE /* Timer.swift in Sources */,
 			);
