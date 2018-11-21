@@ -1,0 +1,22 @@
+PODS:
+  - AsyncTaskPerformer (0.0.1):
+    - AsyncTaskPerformer/Default (= 0.0.1)
+  - AsyncTaskPerformer/Default (0.0.1):
+    - AsyncTaskPerformer/DispatchGroup
+    - AsyncTaskPerformer/OperationQueue
+  - AsyncTaskPerformer/DispatchGroup (0.0.1)
+  - AsyncTaskPerformer/OperationQueue (0.0.1)
+
+DEPENDENCIES:
+  - AsyncTaskPerformer (from `../`)
+
+EXTERNAL SOURCES:
+  AsyncTaskPerformer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AsyncTaskPerformer: 72a5949afd102afd60d29d245b88ff74b7b59e16
+
+PODFILE CHECKSUM: 0abc8ec1ca7a78453b58a79713ed889bfa597361
+
+COCOAPODS: 1.5.0
