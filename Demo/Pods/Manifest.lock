@@ -1,5 +1,11 @@
 PODS:
-  - AsyncTaskPerformer (0.0.1)
+  - AsyncTaskPerformer (0.0.1):
+    - AsyncTaskPerformer/Default (= 0.0.1)
+  - AsyncTaskPerformer/Default (0.0.1):
+    - AsyncTaskPerformer/DispatchGroup
+    - AsyncTaskPerformer/OperationQueue
+  - AsyncTaskPerformer/DispatchGroup (0.0.1)
+  - AsyncTaskPerformer/OperationQueue (0.0.1)
 
 DEPENDENCIES:
   - AsyncTaskPerformer (from `../`)
@@ -9,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AsyncTaskPerformer: d590c46957a4d310f1ce80c69b325f8f0d4c31a9
+  AsyncTaskPerformer: 72a5949afd102afd60d29d245b88ff74b7b59e16
 
 PODFILE CHECKSUM: 0abc8ec1ca7a78453b58a79713ed889bfa597361
 

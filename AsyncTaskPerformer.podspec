@@ -13,4 +13,20 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = "Sources/*.swift"
 
+  s.default_subspec  = "Default"
+
+  s.subspec "Default" do |ss|
+    ss.dependency "AsyncTaskPerformer/DispatchGroup"
+    ss.dependency "AsyncTaskPerformer/OperationQueue"
+    ss.source_files = "Sources/*.{swift}"
+  end
+
+  s.subspec "DispatchGroup" do |ss|
+    ss.source_files = "Sources/DispatchGroup/*.{swift}"
+  end
+
+  s.subspec "OperationQueue" do |ss|
+    ss.source_files = "Sources/OperationQueue/*.{swift}"
+  end
+
 end

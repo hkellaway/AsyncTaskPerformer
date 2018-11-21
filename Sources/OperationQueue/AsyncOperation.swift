@@ -26,7 +26,7 @@
 import Foundation
 
 /// Operation base class representing an async operation.
-class AsyncOperation: Operation {
+open class AsyncOperation: Operation {
     
     // MARK: - Properties
     
@@ -37,11 +37,11 @@ class AsyncOperation: Operation {
     
     // MARK: - Overrides
     
-    override var isAsynchronous: Bool {
+    open override var isAsynchronous: Bool {
         return true
     }
     
-    override var isExecuting: Bool {
+    open override var isExecuting: Bool {
         set {
             if _isExecuting != newValue {
                 willChangeValue(forKey: "isExecuting")
@@ -55,7 +55,7 @@ class AsyncOperation: Operation {
         }
     }
     
-    override var isFinished: Bool {
+    open override var isFinished: Bool {
         set {
             if _isFinished != newValue {
                 willChangeValue(forKey: "isFinished")
@@ -69,7 +69,7 @@ class AsyncOperation: Operation {
         }
     }
     
-    override func start() {
+    open override func start() {
         guard !isCancelled else {
             finish()
             return
@@ -83,7 +83,7 @@ class AsyncOperation: Operation {
     // MARK: - Instance functions
     
     /// Updates state after operation is finished.
-    func finish() {
+    open func finish() {
         isExecuting = false
         isFinished = true
     }

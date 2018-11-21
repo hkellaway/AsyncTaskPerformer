@@ -1,5 +1,5 @@
 //
-//  AsyncTaskSynchronizer.swift
+//  AsynchronousOperationQueueError.swift
 //  AsyncTaskPerformer
 //
 // Copyright (c) 2018 Harlan Kellaway
@@ -25,35 +25,9 @@
 
 import Foundation
 
-/// Executes a set of asynchrnous tasks with single completion point.
-final class AsyncTaskSynchronizer {
-    
-    // MARK: Init/Deinit
-    
-    /// Creates new instance.
-    public init() { }
-    
-    // MARK: - Protocol conformance
-    
-    // MARK: AsyncTaskSynchronizer
-    
-    func executeTasks(_ tasks: [AsyncTask],
-                           completion: @escaping () -> ()) {
-        let taskGroup = DispatchGroup()
-        
-        for task in tasks {
-            taskGroup.enter()
-            
-            task.execute {
-                taskGroup.leave()
-            }
-        }
-        
-        taskGroup.notify(queue: DispatchQueue.main,
-                         work: DispatchWorkItem(block: {
-                            completion()
-                         }
-        ))
-    }
-    
+/// Async OperationQueue error.
+///
+/// - neverExecuted: Operations in queue were never executed.
+public enum AsynchronousOperationQueueError: Error {
+    case neverExecuted
 }

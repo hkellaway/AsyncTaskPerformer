@@ -26,7 +26,7 @@
 import Foundation
 
 /// Represents a task whose execution is asynchronous, such as an API call.
-protocol AsyncTask {
+public protocol AsyncTask {
     
     /// Executes asynchronous task.
     ///

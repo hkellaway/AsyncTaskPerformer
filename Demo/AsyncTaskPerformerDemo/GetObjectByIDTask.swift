@@ -6,6 +6,7 @@
 //  Copyright © 2018 Harlan Kellaway. All rights reserved.
 //
 
+import AsyncTaskPerformer
 import Foundation
 
 /// Asynchronouse task for fetching a object from the API.

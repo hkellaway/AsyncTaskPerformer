@@ -19,5 +19,28 @@
     "ios": "12.0"
   },
   "requires_arc": true,
-  "source_files": "Sources/*.swift"
+  "source_files": "Sources/*.swift",
+  "default_subspecs": "Default",
+  "subspecs": [
+    {
+      "name": "Default",
+      "dependencies": {
+        "AsyncTaskPerformer/DispatchGroup": [
+
+        ],
+        "AsyncTaskPerformer/OperationQueue": [
+
+        ]
+      },
+      "source_files": "Sources/*.{swift}"
+    },
+    {
+      "name": "DispatchGroup",
+      "source_files": "Sources/DispatchGroup/*.{swift}"
+    },
+    {
+      "name": "OperationQueue",
+      "source_files": "Sources/OperationQueue/*.{swift}"
+    }
+  ]
 }

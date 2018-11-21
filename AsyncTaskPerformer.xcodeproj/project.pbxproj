@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC243D2221A5E3720018E938 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D1B21A5E3720018E938 /* AsynchronousOperationQueueError.swift */; };
-		DC243D2321A5E3720018E938 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D1C21A5E3720018E938 /* AsyncOperationQueue.swift */; };
-		DC243D2421A5E3720018E938 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D1D21A5E3720018E938 /* AsyncOperation.swift */; };
-		DC243D2521A5E3720018E938 /* AyncOperationWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D1E21A5E3720018E938 /* AyncOperationWithCompletion.swift */; };
-		DC243D2621A5E3720018E938 /* AsyncTaskSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2021A5E3720018E938 /* AsyncTaskSynchronizer.swift */; };
-		DC243D2721A5E3720018E938 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2121A5E3720018E938 /* AsyncTask.swift */; };
+		DC243D3021A5E6920018E938 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */; };
+		DC243D3121A5E6920018E938 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */; };
+		DC243D3221A5E6920018E938 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2B21A5E6920018E938 /* AsyncOperation.swift */; };
+		DC243D3321A5E6920018E938 /* AyncOperationWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */; };
+		DC243D3421A5E6920018E938 /* AsyncTaskSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */; };
+		DC243D3521A5E6920018E938 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2F21A5E6920018E938 /* AsyncTask.swift */; };
 		DCC0808A21A5DD6800092264 /* AsyncTaskPerformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */; };
 		DCC080A221A5DE3800092264 /* AsyncTaskPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC080A421A5DE7800092264 /* AsyncTaskPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */; };
@@ -29,12 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC243D1B21A5E3720018E938 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
-		DC243D1C21A5E3720018E938 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
-		DC243D1D21A5E3720018E938 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
-		DC243D1E21A5E3720018E938 /* AyncOperationWithCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyncOperationWithCompletion.swift; sourceTree = "<group>"; };
-		DC243D2021A5E3720018E938 /* AsyncTaskSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskSynchronizer.swift; sourceTree = "<group>"; };
-		DC243D2121A5E3720018E938 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
+		DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
+		DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
+		DC243D2B21A5E6920018E938 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyncOperationWithCompletion.swift; sourceTree = "<group>"; };
+		DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskSynchronizer.swift; sourceTree = "<group>"; };
+		DC243D2F21A5E6920018E938 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
 		DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsyncTaskPerformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC0808921A5DD6800092264 /* AsyncTaskPerformerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncTaskPerformerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskPerformerTests.swift; sourceTree = "<group>"; };
@@ -62,24 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC243D1A21A5E3720018E938 /* AsyncOperationQueue */ = {
+		DC243D2821A5E6920018E938 /* OperationQueue */ = {
 			isa = PBXGroup;
 			children = (
-				DC243D1B21A5E3720018E938 /* AsynchronousOperationQueueError.swift */,
-				DC243D1C21A5E3720018E938 /* AsyncOperationQueue.swift */,
-				DC243D1D21A5E3720018E938 /* AsyncOperation.swift */,
-				DC243D1E21A5E3720018E938 /* AyncOperationWithCompletion.swift */,
+				DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */,
+				DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */,
+				DC243D2B21A5E6920018E938 /* AsyncOperation.swift */,
+				DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */,
 			);
-			path = AsyncOperationQueue;
+			path = OperationQueue;
 			sourceTree = "<group>";
 		};
-		DC243D1F21A5E3720018E938 /* AsyncDispatchGroup */ = {
+		DC243D2D21A5E6920018E938 /* DispatchGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DC243D2021A5E3720018E938 /* AsyncTaskSynchronizer.swift */,
-				DC243D2121A5E3720018E938 /* AsyncTask.swift */,
+				DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */,
+				DC243D2F21A5E6920018E938 /* AsyncTask.swift */,
 			);
-			path = AsyncDispatchGroup;
+			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
 		DCC0807621A5DD6700092264 = {
@@ -112,8 +112,8 @@
 		DCC0809D21A5DE3800092264 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DC243D1F21A5E3720018E938 /* AsyncDispatchGroup */,
-				DC243D1A21A5E3720018E938 /* AsyncOperationQueue */,
+				DC243D2D21A5E6920018E938 /* DispatchGroup */,
+				DC243D2821A5E6920018E938 /* OperationQueue */,
 				DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */,
 				DCC0809F21A5DE3800092264 /* Info.plist */,
 			);
@@ -229,12 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC243D2321A5E3720018E938 /* AsyncOperationQueue.swift in Sources */,
-				DC243D2721A5E3720018E938 /* AsyncTask.swift in Sources */,
-				DC243D2621A5E3720018E938 /* AsyncTaskSynchronizer.swift in Sources */,
-				DC243D2421A5E3720018E938 /* AsyncOperation.swift in Sources */,
-				DC243D2521A5E3720018E938 /* AyncOperationWithCompletion.swift in Sources */,
-				DC243D2221A5E3720018E938 /* AsynchronousOperationQueueError.swift in Sources */,
+				DC243D3121A5E6920018E938 /* AsyncOperationQueue.swift in Sources */,
+				DC243D3521A5E6920018E938 /* AsyncTask.swift in Sources */,
+				DC243D3421A5E6920018E938 /* AsyncTaskSynchronizer.swift in Sources */,
+				DC243D3221A5E6920018E938 /* AsyncOperation.swift in Sources */,
+				DC243D3321A5E6920018E938 /* AyncOperationWithCompletion.swift in Sources */,
+				DC243D3021A5E6920018E938 /* AsynchronousOperationQueueError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

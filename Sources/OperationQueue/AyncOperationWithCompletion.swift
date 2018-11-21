@@ -26,9 +26,9 @@
 import Foundation
 
 /// Async operation that has a typed completion block.
-class AsyncOperationWithCompletion<T>: AsyncOperation {
+open class AsyncOperationWithCompletion<T>: AsyncOperation {
     
     /// Completion block with type.
-    var completion: ((T?, Error?) -> Void)?
+    public var completion: ((T?, Error?) -> Void)?
     
 }

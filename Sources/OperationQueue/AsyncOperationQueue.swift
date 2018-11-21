@@ -26,7 +26,7 @@
 import Foundation
 
 /// Operation queue with convenience function for running a list of async operations.
-final class AsyncOperationQueue<T>: OperationQueue {
+public final class AsyncOperationQueue<T>: OperationQueue {
     
     // MARK: - Types
     
@@ -34,7 +34,7 @@ final class AsyncOperationQueue<T>: OperationQueue {
     ///
     /// - concurrent: Queue with multiple operations running concurrently.
     /// - nonConcurrent: Queue where operaitons run one-at-a-time.
-    enum QueueType {
+    public enum QueueType {
         case concurrent(maxConcurrentOperations: Int)
         case nonConcurrent
     }
@@ -42,16 +42,16 @@ final class AsyncOperationQueue<T>: OperationQueue {
     // MARK: - Properties
     
     /// Initial value. Will be returned if queue executed with no operations.
-    var defaultValue: T
+   public var defaultValue: T
     
     // MARK: - Init/Deinit
     
-    convenience init(defaultValue: T) {
+    public convenience init(defaultValue: T) {
         self.init(defaultValue: defaultValue,
                   type: .nonConcurrent)
     }
     
-    required init(defaultValue: T, type: QueueType) {
+    public required init(defaultValue: T, type: QueueType) {
         self.defaultValue = defaultValue
         
         let maxConcurrentOperationCount: Int
@@ -77,7 +77,7 @@ final class AsyncOperationQueue<T>: OperationQueue {
     /// - Parameters:
     ///   - operations: List of operations to execute.
     ///   - completion: Single point of completion for all operations.
-    func executeOperations(_ operations: [AsyncOperationWithCompletion<T>],
+    public func executeOperations(_ operations: [AsyncOperationWithCompletion<T>],
                            completion: @escaping (T?, Error?) -> Void) {
         guard !operations.isEmpty else {
             completion(defaultValue, nil)
