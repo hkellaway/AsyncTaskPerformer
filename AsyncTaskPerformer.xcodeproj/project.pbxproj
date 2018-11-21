@@ -10,6 +10,7 @@
 		DCC0808A21A5DD6800092264 /* AsyncTaskPerformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */; };
 		DCC080A221A5DE3800092264 /* AsyncTaskPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCC080A421A5DE7800092264 /* AsyncTaskPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */; };
+		DCC080A721A5DFFC00092264 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC080A621A5DFFC00092264 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		DCC0809C21A5DE3800092264 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTaskPerformer.h; sourceTree = "<group>"; };
 		DCC0809F21A5DE3800092264 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC080A621A5DFFC00092264 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		DCC0809D21A5DE3800092264 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DCC080A621A5DFFC00092264 /* Test.swift */,
 				DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */,
 				DCC0809F21A5DE3800092264 /* Info.plist */,
 			);
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC080A721A5DFFC00092264 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
