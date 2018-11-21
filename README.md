@@ -27,16 +27,16 @@ github "hkellaway/AsyncTaskPerformer"
 
 ## Usage
 
-AsyncTaskPerformer tasks lists of asynchronous tasks and processes them in order. It can do so for multiple uses cases:
+AsyncTaskPerformer takes lists of asynchronous tasks and processes them in order. It can do so for multiple uses cases:
 
-* The list of asynchronous tasks should be processed in order with a single completion point - but without concern for if errors occur in any nor require a typed result of all tasks completing (Use [#SynchronousDispatchGroup](SynchronousDispatchGroup))
-* The list os asynchronous tasks should be processed in order, report their result using the same type, and complete at a single point - the completion point must report the result of attempting each task in order, either with an error or the final typed result (Use [#SynchronousOperationQueue](SynchronousOperationQueue))
+* The list of asynchronous tasks should be processed in order with a single completion point - but without concern for if errors occur in any nor require a typed result (Use [SynchronousDispatchGroup](#SynchronousDispatchGroup))
+* The list of asynchronous tasks should be processed in order, report their result using the same type, and have a single completion point - the completion point must report the result of attempting each task in order, either with an error or the final typed result (Use [SynchronousOperationQueue](#SynchronousOperationQueue))
 
 ## SynchronousDispatchGroup
 
 `SynchronousDispatchGroup` uses a `DispatchGroup` to synchronize its list of asynchrnous tasks. It is better used for tasks that don't need to be typed and don't need to halt execution if an error occurs. Let's look at an example of usage.
 
-First, create tasks that conforms to `AsyncTask`. Let's imagine a task that prints out "Hello World" - we'll also give the tasks an `id` so we can confirm they're processing in order.
+First, create tasks that conform to `AsyncTask`. Let's imagine a task that prints out "Hello World" - we'll give our tasks an `id` so we can confirm they're processing in order.
 
 ``` swift
 struct SayHelloTask: AsyncTask {
@@ -62,7 +62,7 @@ let tasks: [AsyncTask] = [SayHelloTask(id: 1), SayHelloTask(id: 2), SayHelloTask
 let synchronousDispatchGroup = SynchronousDispatchGroup()
 
 synchronousDispatchGroup.executeTasks(tasks) {
-	print("Goodbye")
+    print("Goodbye")
 }
 
 ```
@@ -79,7 +79,7 @@ Goodbye
 
 ### SynchronousOperationQueue
 
-`SynchronousOperationQueue` uses an `OperationQueue` to synchronize its list of asynchrnous tasks. It is better used for tasks that have a specific type that the tasks work on in-order. For example, in an e-commerce application we might need to remove all Items from the Bag one-by-one and report the state of the Bag after each successful removal.
+`SynchronousOperationQueue` uses an `OperationQueue` to synchronize its list of asynchrnous tasks. It is better used for tasks that have a specific type which the tasks perform work on in-order. For example, in an e-commerce application we might need to remove Items from the Bag one-by-one and report the state of the Bag after each successful removal.
 
 If an error is encountered in the midst of processing the tasks, the rest of the tasks are cancelled and the completion is called early.
 
@@ -120,20 +120,20 @@ let operations = itemsToRemove.map { RemoveItemFromBagOperation(itemID: $0, api:
 let synchronousOperationQueue = SynchronousOperationQueue(defaultValue: currentBag)
 
 synchronousOperationQueue.executeOperations(operations) { (finalBag, error) in
-	if let error = error {
-		print(":()
-	} else {
-		print("Updated Bag: " + finalBag)
-	}
+    if let error = error {
+        print(":()
+    } else {
+        print("Updated Bag: " + finalBag)
+    }
 }
 
 ```
 
-The result from this, if all API calls completed successfully, would be the Bag updated such thaat Item 2 and Item 4 have been removed.
+The result from this, if all API calls completed successfully, would be the Bag updated such that Item 2 and Item 4 have been removed.
 
 ## Credits
 
-Purse was created by [Harlan Kellaway](http://harlankellaway.com).
+AsyncTaskPerformer was created by [Harlan Kellaway](http://harlankellaway.com).
 
 ## License
 

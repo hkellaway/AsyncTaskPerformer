@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "AsyncTaskPerformer"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0"
   s.summary          = "Performs lists of asynchronous tasks"
   s.description      = "Performs lists of asynchronous tasks."
   s.homepage         = "https://github.com/hkellaway/AsyncTaskPerformer"
