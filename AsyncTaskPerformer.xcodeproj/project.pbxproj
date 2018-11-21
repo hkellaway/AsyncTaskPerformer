@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DCC0808A21A5DD6800092264 /* AsyncTaskPerformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */; };
-		DCC0808F21A5DD6800092264 /* AsyncTaskPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0808E21A5DD6800092264 /* AsyncTaskPerformerTests.swift */; };
-		DCC0809121A5DD6800092264 /* AsyncTaskPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC0808321A5DD6700092264 /* AsyncTaskPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCC080A221A5DE3800092264 /* AsyncTaskPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCC080A421A5DE7800092264 /* AsyncTaskPerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsyncTaskPerformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCC0808321A5DD6700092264 /* AsyncTaskPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncTaskPerformer.h; sourceTree = "<group>"; };
-		DCC0808421A5DD6700092264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC0808921A5DD6800092264 /* AsyncTaskPerformerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncTaskPerformerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCC0808E21A5DD6800092264 /* AsyncTaskPerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTaskPerformerTests.swift; sourceTree = "<group>"; };
-		DCC0809021A5DD6800092264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskPerformerTests.swift; sourceTree = "<group>"; };
+		DCC0809C21A5DE3800092264 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncTaskPerformer.h; sourceTree = "<group>"; };
+		DCC0809F21A5DE3800092264 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,8 @@
 		DCC0807621A5DD6700092264 = {
 			isa = PBXGroup;
 			children = (
-				DCC0808221A5DD6700092264 /* AsyncTaskPerformer */,
-				DCC0808D21A5DD6800092264 /* AsyncTaskPerformerTests */,
+				DCC0809D21A5DE3800092264 /* Sources */,
+				DCC0809A21A5DE3800092264 /* Tests */,
 				DCC0808121A5DD6700092264 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +68,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCC0808221A5DD6700092264 /* AsyncTaskPerformer */ = {
+		DCC0809A21A5DE3800092264 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DCC0808321A5DD6700092264 /* AsyncTaskPerformer.h */,
-				DCC0808421A5DD6700092264 /* Info.plist */,
+				DCC0809B21A5DE3800092264 /* AsyncTaskPerformerTests.swift */,
+				DCC0809C21A5DE3800092264 /* Info.plist */,
 			);
-			path = AsyncTaskPerformer;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		DCC0808D21A5DD6800092264 /* AsyncTaskPerformerTests */ = {
+		DCC0809D21A5DE3800092264 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DCC0808E21A5DD6800092264 /* AsyncTaskPerformerTests.swift */,
-				DCC0809021A5DD6800092264 /* Info.plist */,
+				DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */,
+				DCC0809F21A5DE3800092264 /* Info.plist */,
 			);
-			path = AsyncTaskPerformerTests;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC0809121A5DD6800092264 /* AsyncTaskPerformer.h in Headers */,
+				DCC080A221A5DE3800092264 /* AsyncTaskPerformer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC0808F21A5DD6800092264 /* AsyncTaskPerformerTests.swift in Sources */,
+				DCC080A421A5DE7800092264 /* AsyncTaskPerformerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AsyncTaskPerformer/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AsyncTaskPerformer/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AsyncTaskPerformerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AsyncTaskPerformerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
