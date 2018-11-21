@@ -17,14 +17,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let objectIDs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-        asyncDispatchGroupExample(objectIDs: objectIDs)
+        dispatchGroupExample(objectIDs: objectIDs)
     }
     
-    func asyncDispatchGroupExample(objectIDs: [Int]) {
+    func dispatchGroupExample(objectIDs: [Int]) {
         let tasks = objectIDs.map { GetObjectByIDTask(id: $0, api: api) }
-        let asyncTaskSynchronizer = AsyncTaskSynchronizer()
+        let synchronousDispatchGroup = SynchronousDispatchGroup()
         
-        asyncTaskSynchronizer.executeTasks(tasks) {
+        synchronousDispatchGroup.executeTasks(tasks) {
             let finalObject = tasks.last!.result
             if finalObject == nil {
                 print("ERROR")
@@ -34,12 +34,12 @@ class ViewController: UIViewController {
         }
     }
     
-    func asyncOperationQueueExample(objectIDs: [Int]) {
+    func operationQueueExample(objectIDs: [Int]) {
         let operations = objectIDs.map { GetObjectByIDOperation(id: $0, api: api) }
         let nullObject = FakeObject(id: -1, name: "NULL")
-        let asyncOperationQueue = AsyncOperationQueue(defaultValue: nullObject)
+        let synchronousOperationQueue = SynchronousOperationQueue(defaultValue: nullObject)
         
-        asyncOperationQueue.executeOperations(operations) { (finalObject, error) in
+        synchronousOperationQueue.executeOperations(operations) { (finalObject, error) in
             if let error = error {
                 print("ERROR: \(error.localizedDescription)")
             } else {

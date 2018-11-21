@@ -1,5 +1,5 @@
 //
-//  AsyncTaskSynchronizer.swift
+//  SynchronousDispatchGroup.swift
 //  AsyncTaskPerformer
 //
 // Copyright (c) 2018 Harlan Kellaway
@@ -26,12 +26,29 @@
 import Foundation
 
 /// Executes a set of asynchrnous tasks with single completion point.
-public final class AsyncTaskSynchronizer {
+/// Utilizes DispatchGroup.
+public final class SynchronousDispatchGroup {
     
-    // MARK: Init/Deinit
+    // MARK - Properties
+    
+    /// System queue used to execute tasks.
+    public let systemQueue: DispatchQueue
+    
+    // MARK: - Init/Deinit
     
     /// Creates new instance.
-    public init() { }
+    ///
+    /// Defaults to using `main` queue.s
+    public convenience init() {
+        self.init(systemQueue: .main)
+    }
+    
+    /// Cretes new instance.
+    ///
+    /// - Parameter systemQueue: Syscm queue used to execute tasks.
+    public init(systemQueue: DispatchQueue) {
+        self.systemQueue = systemQueue
+    }
     
     // MARK: - Protocol conformance
     
@@ -49,7 +66,7 @@ public final class AsyncTaskSynchronizer {
             }
         }
         
-        taskGroup.notify(queue: DispatchQueue.main,
+        taskGroup.notify(queue: systemQueue,
                          work: DispatchWorkItem(block: {
                             completion()
                          }

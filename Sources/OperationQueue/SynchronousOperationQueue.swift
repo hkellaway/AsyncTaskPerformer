@@ -1,5 +1,5 @@
 //
-//  AsyncOperationQueue.swift
+//  SynchronousOperationQueueError.swift
 //  AsyncTaskPerformer
 //
 // Copyright (c) 2018 Harlan Kellaway
@@ -26,7 +26,7 @@
 import Foundation
 
 /// Operation queue with convenience function for running a list of async operations.
-public final class AsyncOperationQueue<T>: OperationQueue {
+public final class SynchronousOperationQueue<T>: OperationQueue {
     
     // MARK: - Types
     
@@ -42,13 +42,12 @@ public final class AsyncOperationQueue<T>: OperationQueue {
     // MARK: - Properties
     
     /// Initial value. Will be returned if queue executed with no operations.
-   public var defaultValue: T
+    public var defaultValue: T
     
     // MARK: - Init/Deinit
     
     public convenience init(defaultValue: T) {
-        self.init(defaultValue: defaultValue,
-                  type: .nonConcurrent)
+        self.init(defaultValue: defaultValue, type: .nonConcurrent)
     }
     
     public required init(defaultValue: T, type: QueueType) {
@@ -84,7 +83,7 @@ public final class AsyncOperationQueue<T>: OperationQueue {
             return
         }
         
-        var finalResult: (data: T?, error: Error?) = (nil, AsynchronousOperationQueueError.neverExecuted)
+        var finalResult: (data: T?, error: Error?) = (nil, SynchronousOperationQueueError.neverExecuted)
         let completion: () -> Void = {
             DispatchQueue.main.async {
                 completion(finalResult.data, finalResult.error)

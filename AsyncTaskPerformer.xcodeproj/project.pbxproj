@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC243D3021A5E6920018E938 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */; };
-		DC243D3121A5E6920018E938 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */; };
+		DC243D3021A5E6920018E938 /* SynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2921A5E6920018E938 /* SynchronousOperationQueueError.swift */; };
+		DC243D3121A5E6920018E938 /* SynchronousOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2A21A5E6920018E938 /* SynchronousOperationQueue.swift */; };
 		DC243D3221A5E6920018E938 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2B21A5E6920018E938 /* AsyncOperation.swift */; };
 		DC243D3321A5E6920018E938 /* AyncOperationWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */; };
-		DC243D3421A5E6920018E938 /* AsyncTaskSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */; };
+		DC243D3421A5E6920018E938 /* SynchronousDispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2E21A5E6920018E938 /* SynchronousDispatchGroup.swift */; };
 		DC243D3521A5E6920018E938 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC243D2F21A5E6920018E938 /* AsyncTask.swift */; };
 		DCC0808A21A5DD6800092264 /* AsyncTaskPerformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */; };
 		DCC080A221A5DE3800092264 /* AsyncTaskPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC0809E21A5DE3800092264 /* AsyncTaskPerformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,11 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
-		DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
+		DC243D2921A5E6920018E938 /* SynchronousOperationQueueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronousOperationQueueError.swift; sourceTree = "<group>"; };
+		DC243D2A21A5E6920018E938 /* SynchronousOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronousOperationQueue.swift; sourceTree = "<group>"; };
 		DC243D2B21A5E6920018E938 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyncOperationWithCompletion.swift; sourceTree = "<group>"; };
-		DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskSynchronizer.swift; sourceTree = "<group>"; };
+		DC243D2E21A5E6920018E938 /* SynchronousDispatchGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronousDispatchGroup.swift; sourceTree = "<group>"; };
 		DC243D2F21A5E6920018E938 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
 		DCC0808021A5DD6700092264 /* AsyncTaskPerformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsyncTaskPerformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC0808921A5DD6800092264 /* AsyncTaskPerformerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncTaskPerformerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		DC243D2821A5E6920018E938 /* OperationQueue */ = {
 			isa = PBXGroup;
 			children = (
-				DC243D2921A5E6920018E938 /* AsynchronousOperationQueueError.swift */,
-				DC243D2A21A5E6920018E938 /* AsyncOperationQueue.swift */,
+				DC243D2921A5E6920018E938 /* SynchronousOperationQueueError.swift */,
+				DC243D2A21A5E6920018E938 /* SynchronousOperationQueue.swift */,
 				DC243D2B21A5E6920018E938 /* AsyncOperation.swift */,
 				DC243D2C21A5E6920018E938 /* AyncOperationWithCompletion.swift */,
 			);
@@ -76,7 +76,7 @@
 		DC243D2D21A5E6920018E938 /* DispatchGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DC243D2E21A5E6920018E938 /* AsyncTaskSynchronizer.swift */,
+				DC243D2E21A5E6920018E938 /* SynchronousDispatchGroup.swift */,
 				DC243D2F21A5E6920018E938 /* AsyncTask.swift */,
 			);
 			path = DispatchGroup;
@@ -229,12 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC243D3121A5E6920018E938 /* AsyncOperationQueue.swift in Sources */,
+				DC243D3121A5E6920018E938 /* SynchronousOperationQueue.swift in Sources */,
 				DC243D3521A5E6920018E938 /* AsyncTask.swift in Sources */,
-				DC243D3421A5E6920018E938 /* AsyncTaskSynchronizer.swift in Sources */,
+				DC243D3421A5E6920018E938 /* SynchronousDispatchGroup.swift in Sources */,
 				DC243D3221A5E6920018E938 /* AsyncOperation.swift in Sources */,
 				DC243D3321A5E6920018E938 /* AyncOperationWithCompletion.swift in Sources */,
-				DC243D3021A5E6920018E938 /* AsynchronousOperationQueueError.swift in Sources */,
+				DC243D3021A5E6920018E938 /* SynchronousOperationQueueError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

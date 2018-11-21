@@ -1,5 +1,5 @@
 //
-//  AsynchronousOperationQueueError.swift
+//  SynchronousOperationQueueError.swift
 //  AsyncTaskPerformer
 //
 // Copyright (c) 2018 Harlan Kellaway
@@ -25,9 +25,9 @@
 
 import Foundation
 
-/// Async OperationQueue error.
+/// Synchronous OperationQueue error.
 ///
 /// - neverExecuted: Operations in queue were never executed.
-public enum AsynchronousOperationQueueError: Error {
+public enum SynchronousOperationQueueError: Error {
     case neverExecuted
 }
