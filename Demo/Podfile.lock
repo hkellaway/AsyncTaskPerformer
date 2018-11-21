@@ -1,11 +1,11 @@
 PODS:
-  - AsyncTaskPerformer (0.0.1):
-    - AsyncTaskPerformer/Default (= 0.0.1)
-  - AsyncTaskPerformer/Default (0.0.1):
+  - AsyncTaskPerformer (0.1.0):
+    - AsyncTaskPerformer/Default (= 0.1.0)
+  - AsyncTaskPerformer/Default (0.1.0):
     - AsyncTaskPerformer/DispatchGroup
     - AsyncTaskPerformer/OperationQueue
-  - AsyncTaskPerformer/DispatchGroup (0.0.1)
-  - AsyncTaskPerformer/OperationQueue (0.0.1)
+  - AsyncTaskPerformer/DispatchGroup (0.1.0)
+  - AsyncTaskPerformer/OperationQueue (0.1.0)
 
 DEPENDENCIES:
   - AsyncTaskPerformer (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AsyncTaskPerformer: 72a5949afd102afd60d29d245b88ff74b7b59e16
+  AsyncTaskPerformer: 4800535c5d975f910b51c8844e0bc91a668a2f2b
 
-PODFILE CHECKSUM: 0abc8ec1ca7a78453b58a79713ed889bfa597361
+PODFILE CHECKSUM: 4ba7b53f2d94d03601267eb6052d42022d766abc
 
 COCOAPODS: 1.5.0
