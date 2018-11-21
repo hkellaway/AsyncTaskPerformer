@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42026DE4B07D519182F54932B709C6FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CABF3550977C13BD04DBEC5D2A67B /* Test.swift */; };
 		47842081CF4695F126C269539E7FBCDA /* AsyncTaskPerformer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF88757A630A99A8872838BD7E3FA96 /* AsyncTaskPerformer-dummy.m */; };
 		50BEE8ED681CF141AFD2DB62815FAEE2 /* Pods-AsyncTaskPerformerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E05AAE84198A956E2542190726BF66 /* Pods-AsyncTaskPerformerDemo-dummy.m */; };
 		B4C31CF07B15D713F78F2207BA0EBEA6 /* Pods-AsyncTaskPerformerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D6F013092FA9E6D38F05F823B37750 /* Pods-AsyncTaskPerformerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +34,6 @@
 		34188EC947BC43DEB11D4290ABE7DF95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3C3092AA40E098AE5E96EDE5BF15ADF5 /* Pods-AsyncTaskPerformerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AsyncTaskPerformerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		53917F01F9DD6C28A5F2DC03113E0ACD /* AsyncTaskPerformer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsyncTaskPerformer-umbrella.h"; sourceTree = "<group>"; };
-		620CABF3550977C13BD04DBEC5D2A67B /* Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Test.swift; path = Sources/Test.swift; sourceTree = "<group>"; };
 		6506629C16ABB3778641E124F29FC9DD /* Pods_AsyncTaskPerformerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncTaskPerformerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650A5D1107DB696BC9DE4A1638C04DF9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -76,7 +74,6 @@
 		48CD0439E9A67A044DA5500E8D7605B1 /* AsyncTaskPerformer */ = {
 			isa = PBXGroup;
 			children = (
-				620CABF3550977C13BD04DBEC5D2A67B /* Test.swift */,
 				C2010748266A3C05D36FE592239F6591 /* Pod */,
 				C43DA20FC921F9B275D8300E163CF13D /* Support Files */,
 			);
@@ -281,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47842081CF4695F126C269539E7FBCDA /* AsyncTaskPerformer-dummy.m in Sources */,
-				42026DE4B07D519182F54932B709C6FA /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

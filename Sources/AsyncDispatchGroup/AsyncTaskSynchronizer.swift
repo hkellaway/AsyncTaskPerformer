@@ -1,8 +1,8 @@
 //
-//  Test.swift
+//  AsyncTaskSynchronizer.swift
 //  AsyncTaskPerformer
 //
-// Copyright © 2018 Harlan Kellaway
+// Copyright (c) 2018 Harlan Kellaway
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,11 +21,39 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+//
 
-public struct Test {
+import Foundation
+
+/// Executes a set of asynchrnous tasks with single completion point.
+final class AsyncTaskSynchronizer {
     
-    public func hello() -> String {
-        return "Hello World"
+    // MARK: Init/Deinit
+    
+    /// Creates new instance.
+    public init() { }
+    
+    // MARK: - Protocol conformance
+    
+    // MARK: AsyncTaskSynchronizer
+    
+    func executeTasks(_ tasks: [AsyncTask],
+                           completion: @escaping () -> ()) {
+        let taskGroup = DispatchGroup()
+        
+        for task in tasks {
+            taskGroup.enter()
+            
+            task.execute {
+                taskGroup.leave()
+            }
+        }
+        
+        taskGroup.notify(queue: DispatchQueue.main,
+                         work: DispatchWorkItem(block: {
+                            completion()
+                         }
+        ))
     }
     
 }
