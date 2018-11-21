@@ -1,15 +1,32 @@
 //
 //  AsyncOperationQueue.swift
-//  AsyncTaskPerformerDemo
+//  AsyncTaskPerformer
 //
-//  Created by Harlan Kellaway on 7/6/18.
-//  Copyright © 2018 Harlan Kellaway. All rights reserved.
+// Copyright (c) 2018 Harlan Kellaway
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 //
 
 import Foundation
 
 /// Operation queue with convenience function for running a list of async operations.
-final class AsyncOperationQueue<T>: OperationQueue {
+public final class AsyncOperationQueue<T>: OperationQueue {
     
     // MARK: - Types
     
@@ -17,7 +34,7 @@ final class AsyncOperationQueue<T>: OperationQueue {
     ///
     /// - concurrent: Queue with multiple operations running concurrently.
     /// - nonConcurrent: Queue where operaitons run one-at-a-time.
-    enum QueueType {
+    public enum QueueType {
         case concurrent(maxConcurrentOperations: Int)
         case nonConcurrent
     }
@@ -25,16 +42,16 @@ final class AsyncOperationQueue<T>: OperationQueue {
     // MARK: - Properties
     
     /// Initial value. Will be returned if queue executed with no operations.
-    var defaultValue: T
+   public var defaultValue: T
     
     // MARK: - Init/Deinit
     
-    convenience init(defaultValue: T) {
+    public convenience init(defaultValue: T) {
         self.init(defaultValue: defaultValue,
                   type: .nonConcurrent)
     }
     
-    required init(defaultValue: T, type: QueueType) {
+    public required init(defaultValue: T, type: QueueType) {
         self.defaultValue = defaultValue
         
         let maxConcurrentOperationCount: Int
@@ -60,7 +77,7 @@ final class AsyncOperationQueue<T>: OperationQueue {
     /// - Parameters:
     ///   - operations: List of operations to execute.
     ///   - completion: Single point of completion for all operations.
-    func executeOperations(_ operations: [AsyncOperationWithCompletion<T>],
+    public func executeOperations(_ operations: [AsyncOperationWithCompletion<T>],
                            completion: @escaping (T?, Error?) -> Void) {
         guard !operations.isEmpty else {
             completion(defaultValue, nil)

@@ -1,0 +1,46 @@
+{
+  "name": "AsyncTaskPerformer",
+  "version": "0.0.1",
+  "summary": "Performs lists of asynchronous tasks",
+  "description": "Performs lists of asynchronous tasks.",
+  "homepage": "https://github.com/hkellaway/AsyncTaskPerformer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Harlan Kellaway": "hello@harlankellaway.com"
+  },
+  "source": {
+    "git": "https://github.com/hkellaway/AsyncTaskPerformer.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "requires_arc": true,
+  "source_files": "Sources/*.swift",
+  "default_subspecs": "Default",
+  "subspecs": [
+    {
+      "name": "Default",
+      "dependencies": {
+        "AsyncTaskPerformer/DispatchGroup": [
+
+        ],
+        "AsyncTaskPerformer/OperationQueue": [
+
+        ]
+      },
+      "source_files": "Sources/*.{swift}"
+    },
+    {
+      "name": "DispatchGroup",
+      "source_files": "Sources/DispatchGroup/*.{swift}"
+    },
+    {
+      "name": "OperationQueue",
+      "source_files": "Sources/OperationQueue/*.{swift}"
+    }
+  ]
+}

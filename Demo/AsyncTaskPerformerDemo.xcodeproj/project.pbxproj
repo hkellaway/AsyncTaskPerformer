@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3FB9E4B9D8DE155C708EE5D /* Pods_AsyncTaskPerformerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01082D5B7E532AF1C432D3BA /* Pods_AsyncTaskPerformerDemo.framework */; };
 		DC0EDE2320EFA82C00059DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE2220EFA82C00059DEE /* AppDelegate.swift */; };
 		DC0EDE2520EFA82C00059DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE2420EFA82C00059DEE /* ViewController.swift */; };
 		DC0EDE2820EFA82C00059DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0EDE2620EFA82C00059DEE /* Main.storyboard */; };
@@ -14,17 +15,14 @@
 		DC0EDE2D20EFA82C00059DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0EDE2B20EFA82C00059DEE /* LaunchScreen.storyboard */; };
 		DC0EDE3620EFA8C900059DEE /* FakeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3520EFA8C900059DEE /* FakeAPI.swift */; };
 		DC0EDE3820EFA99000059DEE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3720EFA99000059DEE /* Timer.swift */; };
-		DC0EDE3A20EFABB700059DEE /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */; };
-		DC61413720EFAC8D00026539 /* AyncOperationWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */; };
-		DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */; };
-		DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */; };
 		DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */; };
-		DC91A73D20F0547B00D295AD /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A73C20F0547B00D295AD /* AsyncTask.swift */; };
-		DC91A73F20F054A600D295AD /* AsyncTaskSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */; };
 		DC91A74120F054DB00D295AD /* GetObjectByIDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91A74020F054DA00D295AD /* GetObjectByIDTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01082D5B7E532AF1C432D3BA /* Pods_AsyncTaskPerformerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncTaskPerformerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC3541846E0866547ED2E1 /* Pods-AsyncTaskPerformerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTaskPerformerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTaskPerformerDemo/Pods-AsyncTaskPerformerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		480DBFA5A0C100FD09C15587 /* Pods-AsyncTaskPerformerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTaskPerformerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTaskPerformerDemo/Pods-AsyncTaskPerformerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0EDE1F20EFA82C00059DEE /* AsyncTaskPerformerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncTaskPerformerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0EDE2220EFA82C00059DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC0EDE2420EFA82C00059DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,13 +32,7 @@
 		DC0EDE2E20EFA82C00059DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC0EDE3520EFA8C900059DEE /* FakeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAPI.swift; sourceTree = "<group>"; };
 		DC0EDE3720EFA99000059DEE /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
-		DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyncOperationWithCompletion.swift; sourceTree = "<group>"; };
-		DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperationQueue.swift; sourceTree = "<group>"; };
-		DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationQueueError.swift; sourceTree = "<group>"; };
 		DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObjectByIDOperation.swift; sourceTree = "<group>"; };
-		DC91A73C20F0547B00D295AD /* AsyncTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
-		DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTaskSynchronizer.swift; sourceTree = "<group>"; };
 		DC91A74020F054DA00D295AD /* GetObjectByIDTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObjectByIDTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FB9E4B9D8DE155C708EE5D /* Pods_AsyncTaskPerformerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831B6E20D702A51D6C942486 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01082D5B7E532AF1C432D3BA /* Pods_AsyncTaskPerformerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B972648D9BEF970535597EEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				480DBFA5A0C100FD09C15587 /* Pods-AsyncTaskPerformerDemo.debug.xcconfig */,
+				2DAC3541846E0866547ED2E1 /* Pods-AsyncTaskPerformerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC0EDE1620EFA82C00059DEE = {
 			isa = PBXGroup;
 			children = (
 				DC0EDE2120EFA82C00059DEE /* AsyncTaskPerformerDemo */,
 				DC0EDE2020EFA82C00059DEE /* Products */,
+				B972648D9BEF970535597EEB /* Pods */,
+				831B6E20D702A51D6C942486 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +88,6 @@
 			children = (
 				DC0EDE3520EFA8C900059DEE /* FakeAPI.swift */,
 				DC0EDE3720EFA99000059DEE /* Timer.swift */,
-				DC0EDE3420EFA8AD00059DEE /* Library */,
 				DC0EDE2220EFA82C00059DEE /* AppDelegate.swift */,
 				DC0EDE2420EFA82C00059DEE /* ViewController.swift */,
 				DC61413C20EFADB300026539 /* GetObjectByIDOperation.swift */,
@@ -89,35 +100,6 @@
 			path = AsyncTaskPerformerDemo;
 			sourceTree = "<group>";
 		};
-		DC0EDE3420EFA8AD00059DEE /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				DC91A73B20EFB43200D295AD /* AsyncDispatchGroup */,
-				DC91A73A20EFB42100D295AD /* AsyncOperationQueue */,
-			);
-			name = Library;
-			sourceTree = "<group>";
-		};
-		DC91A73A20EFB42100D295AD /* AsyncOperationQueue */ = {
-			isa = PBXGroup;
-			children = (
-				DC0EDE3920EFABB700059DEE /* AsyncOperation.swift */,
-				DC61413620EFAC8D00026539 /* AyncOperationWithCompletion.swift */,
-				DC61413820EFACBB00026539 /* AsyncOperationQueue.swift */,
-				DC61413A20EFAD6200026539 /* AsynchronousOperationQueueError.swift */,
-			);
-			name = AsyncOperationQueue;
-			sourceTree = "<group>";
-		};
-		DC91A73B20EFB43200D295AD /* AsyncDispatchGroup */ = {
-			isa = PBXGroup;
-			children = (
-				DC91A73C20F0547B00D295AD /* AsyncTask.swift */,
-				DC91A73E20F054A600D295AD /* AsyncTaskSynchronizer.swift */,
-			);
-			name = AsyncDispatchGroup;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC0EDE3120EFA82C00059DEE /* Build configuration list for PBXNativeTarget "AsyncTaskPerformerDemo" */;
 			buildPhases = (
+				34366861534075A78126805E /* [CP] Check Pods Manifest.lock */,
 				DC0EDE1B20EFA82C00059DEE /* Sources */,
 				DC0EDE1C20EFA82C00059DEE /* Frameworks */,
 				DC0EDE1D20EFA82C00059DEE /* Resources */,
+				C1A6F7339C1FD69FD5889906 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,11 +129,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Harlan Kellaway";
 				TargetAttributes = {
 					DC0EDE1E20EFA82C00059DEE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -185,6 +170,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34366861534075A78126805E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsyncTaskPerformerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A6F7339C1FD69FD5889906 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AsyncTaskPerformerDemo/Pods-AsyncTaskPerformerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncTaskPerformer/AsyncTaskPerformer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncTaskPerformer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncTaskPerformerDemo/Pods-AsyncTaskPerformerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC0EDE1B20EFA82C00059DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -193,14 +217,8 @@
 				DC0EDE2520EFA82C00059DEE /* ViewController.swift in Sources */,
 				DC0EDE2320EFA82C00059DEE /* AppDelegate.swift in Sources */,
 				DC0EDE3620EFA8C900059DEE /* FakeAPI.swift in Sources */,
-				DC61413920EFACBB00026539 /* AsyncOperationQueue.swift in Sources */,
 				DC91A74120F054DB00D295AD /* GetObjectByIDTask.swift in Sources */,
 				DC61413D20EFADB300026539 /* GetObjectByIDOperation.swift in Sources */,
-				DC91A73F20F054A600D295AD /* AsyncTaskSynchronizer.swift in Sources */,
-				DC61413B20EFAD6200026539 /* AsynchronousOperationQueueError.swift in Sources */,
-				DC0EDE3A20EFABB700059DEE /* AsyncOperation.swift in Sources */,
-				DC91A73D20F0547B00D295AD /* AsyncTask.swift in Sources */,
-				DC61413720EFAC8D00026539 /* AyncOperationWithCompletion.swift in Sources */,
 				DC0EDE3820EFA99000059DEE /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +259,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -248,6 +267,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -275,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -298,6 +318,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -305,6 +326,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -326,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -336,6 +358,7 @@
 		};
 		DC0EDE3220EFA82C00059DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480DBFA5A0C100FD09C15587 /* Pods-AsyncTaskPerformerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -345,13 +368,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.AsyncTaskPerformerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		DC0EDE3320EFA82C00059DEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DAC3541846E0866547ED2E1 /* Pods-AsyncTaskPerformerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -361,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harlankellaway.AsyncTaskPerformerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
