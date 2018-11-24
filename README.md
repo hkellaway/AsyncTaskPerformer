@@ -93,7 +93,7 @@ final class RemoveItemFromBagOperation: AsyncOperationWithCompletion<Bag> {
     let itemID: Int
     let api: ECommAPI
     
-    init(id: Int, api: FakeAPI) {
+    init(id: Int, api: ECommAPI) {
         self.id = id
         self.api = api
     }
@@ -111,7 +111,7 @@ final class RemoveItemFromBagOperation: AsyncOperationWithCompletion<Bag> {
 
 The critical aspect of `AsyncOperationWithCompletion` is that it calls its own `completion` closure then calls `finish()`.
 
-Next, create a `SynchronousOperationQueue` and give it a list of tasks to perhaps - as well as a starting value and a single completion point.
+Next, create a `SynchronousOperationQueue` and give it a list of tasks to process - as well as a starting value and a single completion point.
 
 ``` swift
 let currentBag = Bag(items: [Item(id: 1), Item(id: 2), Item(id: 3), Item(id: 4)])
@@ -121,7 +121,7 @@ let synchronousOperationQueue = SynchronousOperationQueue(defaultValue: currentB
 
 synchronousOperationQueue.executeOperations(operations) { (finalBag, error) in
     if let error = error {
-        print(":()
+        print(":(")
     } else {
         print("Updated Bag: " + finalBag)
     }
